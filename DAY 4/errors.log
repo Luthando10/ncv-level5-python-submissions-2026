@@ -1,0 +1,15 @@
+======================================================================
+ERROR LOG - REJECTED RECORDS
+======================================================================
+1. Line: 'M001,Duplicate Meter,900,930,Mamelodi' | REASON: Duplicate meter number 'M001' - already exists
+2. Line: 'M211,Missing Reading,,950,Soshanguve' | REASON: Missing field - one or more fields are empty
+3. Line: 'M212,Negative Reading,-10,20,Mamelodi' | REASON: Negative reading - Previous=-10 Current=20 readings cannot be negative
+4. Line: 'M213,Reversed Reading,1200,1100,Ga-Rankuwa' | REASON: Current reading (1100) is below previous reading (1200)
+5. Line: 'M214,Invalid Reading,abc,1230,Atteridgeville' | REASON: Non-numeric reading - Previous='abc' Current='1230' must be integers
+6. Line: 'M215,Missing Area,900,950,' | REASON: Missing field - one or more fields are empty
+7. Line: 'M216,Too,Few,Fields' | REASON: Missing fields - expected 5 fields, found 4
+8. Line: 'M217,Extra,100,120,Mamelodi,EXTRA' | REASON: Missing fields - expected 5 fields, found 6
+9. Line: 'M218,,100,150,Soshanguve' | REASON: Missing field - one or more fields are empty
+10. Line: 'M219, ,100,130,Mamelodi' | REASON: Missing field - one or more fields are empty
+----------------------------------------------------------------------
+Total rejected: 10
